@@ -1,0 +1,48 @@
+/* Generics */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+  
+}
+
+.row{
+    margin: 10px 80px;
+}
+
+/* Utilities */
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+
+
+article.card{
+    height: 450px;
+    width: calc(1200px / 3 - 62px);
+    margin: 3px;
+    
+    background-color: #ebebeb;
+    background-position: center;
+    background-size: cover;
+    
+    display: inline-block;
+}
+
+/* Products */
+
+.t-shirt{
+    background-image: url("../img/1.webp");
+}
+
+.dress{
+    background-image: url("../img/2.webp");
+}
+
+.tailleur{
+    background-image: url("../img/3.webp");
+}
+
