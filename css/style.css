@@ -8,7 +8,6 @@
 
 .row{
     margin: 10px 80px;
-    position: relative;
 }
 
 /* Utilities */
@@ -22,7 +21,7 @@
 
 
 article.card{
-    height: 450px;
+    height: 500px;
     width: calc(1200px / 3 - 62px);
     margin: 3px;
     
@@ -31,13 +30,13 @@ article.card{
     background-size: cover;
     
     display: inline-block;
+    position: relative;
 }
 
-.card::before{
-    height: 50px;
-    width: 50px;
-    background-color: white;
 
+
+.card:hover::before{
+    color: red;
 }
 
 /* Products */
@@ -45,17 +44,75 @@ article.card{
 .t-shirt{
     background-image: url("../img/1.webp");
 }
+.t-shirt:hover{
+    background-image: url('../img/1b.webp');
+}
 
 .dress{
     background-image: url("../img/2.webp");
 }
+.dress:hover{
+    background-image: url('../img/2b.webp');
 
+}
 .tailleur{
     background-image: url("../img/3.webp");
 }
-
+.tailleur:hover{
+background-image: url('../img/3b.webp');
+}
 /* descrizione del prodotto */
 .description{
     position: absolute;
-    top:450px;
+    top:500px;
+}
+
+.name{
+    font-weight:bold;
+}
+.cost{
+    color:#ff0059;
+    font-weight:bold;
+}
+.previous-price{
+    text-decoration:line-through;
+    color:#cdcdcd;
+}
+
+/* effetti sulle card */
+.card::before{
+    content:'\2665';
+    font-size: 1.2em;
+    padding: 6px 10px;
+
+    color:black;
+    background-color: white;
+
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+
+
+.sales{
+    color:#fff;
+    background-color:#e91748;
+    padding: 2px 4px;
+
+    position: absolute;
+    bottom: 8px;
+}
+
+.sustainability{
+    color: #fff;
+    background-color:#00875a;
+    padding: 2px 4px;
+
+    position: absolute;
+    bottom: 8px;
+    left: 35px;
+}
+
+.size-on-image span{
+    font-size: 12px;
 }
