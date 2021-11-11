@@ -40,43 +40,44 @@ article.card{
 
 
 
-/* Products */
+/* Foto dei prodotti */
 
 .t-shirt{
     background-image: url("../img/1.webp");
-}
-.t-shirt:hover{
-    background-image: url('../img/1b.webp');
 }
 
 .dress{
     background-image: url("../img/2.webp");
 }
-.dress:hover{
-    background-image: url('../img/2b.webp');
-
-}
 .tailleur{
     background-image: url("../img/3.webp");
 }
-.tailleur:hover{
-background-image: url('../img/3b.webp');
-}
-/* prodotti della seconda riga */
 .row:nth-child(2) .t-shirt{
     background-image: url('../img/4.webp');
-}
-.row:nth-child(2) .t-shirt:hover{
-    background-image: url('../img/4b.webp');
 }
 .row:nth-child(2) .dress{
     background-image: url('../img/5.webp');
 }
-.row:nth-child(2) .dress:hover{
-    background-image: url('../img/5b.webp');
-}
 .row:nth-child(2) .tailleur{
     background-image: url('../img/6.webp');
+}
+
+/* hover delle immagini dei prodotti */
+
+.t-shirt:hover{
+    background-image: url('../img/1b.webp');
+}
+.dress:hover{
+    background-image: url('../img/2b.webp');
+}
+.tailleur:hover{
+    background-image: url('../img/3b.webp');
+}
+.row:nth-child(2) .t-shirt:hover{
+    background-image: url('../img/4b.webp');
+}
+.row:nth-child(2) .dress:hover{
+    background-image: url('../img/5b.webp');
 }
 .row:nth-child(2) .tailleur:hover{
     background-image: url('../img/6b.webp');
@@ -99,21 +100,20 @@ background-image: url('../img/3b.webp');
     color:#cdcdcd;
 }
 
-/* effetti sulle card */
-.card::before{
-    content:'\2665';
+.heart{
     font-size: 1.2em;
-    padding: 6px 10px;
+   padding: 6px 10px;
 
-    color:black;
-    background-color: white;
+   color:black;
+   background-color: white;
 
-    position: absolute;
-    top: 10px;
-    right: 0;
+   position: absolute;
+   top: 10px;
+   right: 0;
 }
-.card::before .card::before{
-    color: red;
+
+.heart:hover{
+   color:#e91748;
 }
 
 .sales{
@@ -139,3 +139,5 @@ background-image: url('../img/3b.webp');
     font-size: 12px;
     font-weight: bolder;
 }
+
+
