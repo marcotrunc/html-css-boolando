@@ -10,6 +10,9 @@
     margin: 10px 80px;
 }
 
+.row:nth-child(2){
+    margin-top: 80px;
+}
 /* Utilities */
 
 .container{
@@ -35,9 +38,7 @@ article.card{
 
 
 
-.card:hover::before{
-    color: red;
-}
+
 
 /* Products */
 
@@ -61,13 +62,32 @@ article.card{
 .tailleur:hover{
 background-image: url('../img/3b.webp');
 }
+/* prodotti della seconda riga */
+.row:nth-child(2) .t-shirt{
+    background-image: url('../img/4.webp');
+}
+.row:nth-child(2) .t-shirt:hover{
+    background-image: url('../img/4b.webp');
+}
+.row:nth-child(2) .dress{
+    background-image: url('../img/5.webp');
+}
+.row:nth-child(2) .dress:hover{
+    background-image: url('../img/5b.webp');
+}
+.row:nth-child(2) .tailleur{
+    background-image: url('../img/6.webp');
+}
+.row:nth-child(2) .tailleur:hover{
+    background-image: url('../img/6b.webp');
+}
 /* descrizione del prodotto */
 .description{
     position: absolute;
     top:500px;
 }
 
-.name{
+.description span:nth-child(2){
     font-weight:bold;
 }
 .cost{
@@ -92,7 +112,9 @@ background-image: url('../img/3b.webp');
     top: 10px;
     right: 0;
 }
-
+.card::before .card::before{
+    color: red;
+}
 
 .sales{
     color:#fff;
@@ -110,9 +132,10 @@ background-image: url('../img/3b.webp');
 
     position: absolute;
     bottom: 8px;
-    left: 35px;
+    left: 38px;
 }
 
 .size-on-image span{
     font-size: 12px;
+    font-weight: bolder;
 }
