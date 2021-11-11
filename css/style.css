@@ -8,6 +8,7 @@
 
 .row{
     margin: 10px 80px;
+    position: relative;
 }
 
 /* Utilities */
@@ -32,6 +33,13 @@ article.card{
     display: inline-block;
 }
 
+.card::before{
+    height: 50px;
+    width: 50px;
+    background-color: white;
+
+}
+
 /* Products */
 
 .t-shirt{
@@ -46,3 +54,8 @@ article.card{
     background-image: url("../img/3.webp");
 }
 
+/* descrizione del prodotto */
+.description{
+    position: absolute;
+    top:450px;
+}
