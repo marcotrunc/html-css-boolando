@@ -1,0 +1,87 @@
+/* Generics */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Utilities */
+.container{
+    margin: 0 auto;
+    width: 1200px;
+    
+}
+
+.clearfix::after{
+    display: table;
+    content: '';
+    clear: both;
+}
+img{
+    width: 100%;
+}
+
+
+/* Stile dell'immagine */
+.card{
+    
+    width: calc(1200px / 3 - 60px);
+    margin: 10px 30px;
+    position: relative;
+    float: left;
+}
+
+.heart{
+    width: 35px;
+    height: 35px;
+    color: black;
+    background-color: whitesmoke;
+    text-align: center;
+    line-height: 35px;
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+
+.badge{
+    position: absolute;
+    bottom:90px;
+}
+.sales,.sustainability{
+    padding: 2px 5px;
+}
+.sales{
+    font-weight: bolder;
+    color: whitesmoke;
+    background-color:#eb0037;
+}
+
+.sustainability{
+    color: whitesmoke;
+    background-color:#00875a;
+}
+/* effetto hover */
+.image .secondary-picture{
+    display: none;
+
+}
+.image:hover .main-picture{
+    display: none;
+}
+.image:hover .secondary-picture{
+    display: inline-block;
+}
+
+.heart:hover{
+    color:#eb0037;
+}
+/* Stile della descrizione */
+.price{
+    color: #ff1d14;
+    font-weight:bold;
+}
+
+.primary-price{
+    color:#c5bd93 ;
+    text-decoration:line-through;
+}

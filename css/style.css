@@ -25,10 +25,10 @@
 
 article.card{
     height: 500px;
-    width: calc(1200px / 3 - 62px);
+    width: calc(100% / 3 - 9px);
     margin: 3px;
     
-    background-color: #ebebeb;
+    background-color: yellow;
     background-position: center;
     background-size: cover;
     
@@ -99,7 +99,7 @@ article.card{
     text-decoration:line-through;
     color:#cdcdcd;
 }
-
+/* favourite */
 .heart{
     font-size: 1.2em;
    padding: 6px 10px;
@@ -115,7 +115,7 @@ article.card{
 .heart:hover{
    color:#e91748;
 }
-
+/* Prezzo e sostenibilità */
 .sales{
     color:#fff;
     background-color:#e91748;
